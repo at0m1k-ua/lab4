@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 
-class CalculatorScreen3 {
+class ShortCircuitCalculator {
 
     private var inputsMap by mutableStateOf(mapOf(
         "power" to "",
@@ -66,7 +66,7 @@ class CalculatorScreen3 {
                 modifier = Modifier.padding(vertical = 8.dp)
             ) {
                 InputField(
-                    label = "Середньодобова потужність 3",
+                    label = "Середньодобова потужність 2",
                     units = "МВт",
                     value = inputsMap["power"] ?: "",
                     onValueChange = { onValueChange("power", it) }

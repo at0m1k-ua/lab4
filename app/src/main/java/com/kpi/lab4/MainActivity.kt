@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
 fun MainScreen() {
     var selectedTabIndex by remember { mutableIntStateOf(0) }
 
-    val tabTitles = listOf("Tab 1", "Tab 2", "Tab 3")
+    val tabTitles = listOf("Кабель", "Струм КЗ", "Струм КЗ ХПнЕМ")
 
     Scaffold(
         topBar = {
@@ -49,9 +49,9 @@ fun MainScreen() {
                 .padding(paddingValues)
         ) {
             when (selectedTabIndex) {
-                0 -> CalculatorScreen1().View()
-                1 -> CalculatorScreen2().View()
-                2 -> CalculatorScreen3().View()
+                0 -> CableCalculator().View()
+                1 -> ShortCircuitCalculator().View()
+                2 -> HpnemCalculator().View()
             }
         }
     }

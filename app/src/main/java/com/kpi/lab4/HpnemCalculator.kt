@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 
-class CalculatorScreen1 {
+class HpnemCalculator {
 
     private var inputsMap by mutableStateOf(mapOf(
         "power" to "",
@@ -66,7 +66,7 @@ class CalculatorScreen1 {
                 modifier = Modifier.padding(vertical = 8.dp)
             ) {
                 InputField(
-                    label = "Середньодобова потужність 1",
+                    label = "Середньодобова потужність 3",
                     units = "МВт",
                     value = inputsMap["power"] ?: "",
                     onValueChange = { onValueChange("power", it) }
