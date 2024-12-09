@@ -25,10 +25,7 @@ import kotlin.math.sqrt
 
 class CableCalculator {
 
-    private var inputsMap by mutableStateOf(mapOf(
-        "power" to "",
-        "deviation" to ""
-    ))
+    private var inputsMap by mutableStateOf(mapOf<String, String>())
 
     private var calculationResult by mutableStateOf("Показники ще не обчислено")
 
