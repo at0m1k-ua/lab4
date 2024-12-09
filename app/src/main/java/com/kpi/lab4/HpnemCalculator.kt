@@ -56,8 +56,6 @@ class HpnemCalculator {
         val i3p10kv = 11*1000/sqrt(3.0)/z10kv
         val i2p10kv = i3p10kv*sqrt(3.0)/2
 
-
-
         calculationResult = """
             Трифазний струм КЗ на шинах 110 кВ: %.2f
             Двофазний струм КЗ на шинах 110 кВ: %.2f
